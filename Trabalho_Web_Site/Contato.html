@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://image.freepik.com/vector-gratis/ilustracion-cabeza-aguila-aislada_72076-437.jpg">
+  <title>Contados</title>
+  <link href="Contato.css" rel="stylesheet" type="text/css" />
+</head>
+  
+  <body>
+   <nav>
+        <ul>
+          <li>
+            <a href="menu.html">Home</a>
+          </li>
+        </ul>
+      </nav>
+    <header>
+       <h1>Contatos</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Nossa equipe dedicada está pronta para ajudar e fornecer assistência 
+        personalizada para atender às suas necessidades específicas.<br>
+      Entre em Contato conosco!!</h2>
+      </section>
+      <button onclick="redirectToGitHub()">GitHub</button>
+      <button onclick="redirectToLinkedIn()">LinkedIn</button>
+      <button onclick="redirectToWhatsApp()">WhatsApp</button>
+    </main>
+    <script>
+      function redirectToGitHub() {
+        window.open('https://github.com/MarceloBatistazul', '_blank', 'noopener noreferrer');
+      }
+      function redirectToLinkedin() {
+        window.open("https://www.linkedin.com/in/marcelo-batista-561871219/" , '_blank', 'noopener noreferrer');
+      }
+      function redirectToWhatsApp() {
+        
+        var phoneNumber = "+55 16 99148-7573";
+
+        
+        phoneNumber = phoneNumber.replace(/[^\d]/g, '');
+
+        
+        var whatsappLink = "https://wa.me/" + phoneNumber;
+
+        
+        window.open(whatsappLink, '_blank', 'noopener noreferrer');
+      }
+    </script>
+  </body>
